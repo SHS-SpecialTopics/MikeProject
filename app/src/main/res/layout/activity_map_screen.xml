@@ -25841,6 +25841,985 @@
                 android:visibility="invisible"/>
         </RelativeLayout>
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="100dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/sa_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/sa_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_1"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/sa_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_2"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sa_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_3"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sa_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_4"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sa_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_5"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="22dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/sa_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_6"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/sa_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_7"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="22dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sa_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sa_missile_8"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="27dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sa_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/sa_missile_9"
+            android:layout_marginLeft="7dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/sa_explosion_layout"
+            android:layout_toRightOf="@+id/sa_missile_8"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sa_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sa_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sa_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sa_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="150dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/sf_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/sf_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/sf_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sf_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_3"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sf_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_4"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sf_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_5"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="17dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/sf_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_6"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/sf_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_7"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sf_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/sf_missile_8"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="33dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/sf_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@+id/sf_missile_9"
+            android:layout_marginLeft="1dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/sf_explosion_layout"
+            android:layout_toRightOf="@+id/sf_missile_8"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sf_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sf_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sf_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/sf_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="50dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/me_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/me_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_1"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/me_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/me_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_3"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="37dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/me_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_4"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/me_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_5"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="27dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/me_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_6"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="25dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/me_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_7"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="27dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/me_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toRightOf="@+id/me_missile_8"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="33dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/me_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="43dp"
+            android:layout_toRightOf="@+id/me_missile_9"
+            android:layout_marginLeft="1dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/me_explosion_layout"
+            android:layout_toRightOf="@+id/me_missile_8"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/me_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/me_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/me_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/me_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="120dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/nf_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/nf_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_1"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/nf_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_2"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/nf_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_3"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/nf_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_4"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/nf_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_5"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="28dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/nf_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_6"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/nf_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_7"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="56dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/nf_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/nf_missile_8"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="75dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/nf_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="95dp"
+            android:layout_toLeftOf="@+id/nf_missile_9"
+            android:layout_marginRight="1dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/nf_explosion_layout"
+            android:layout_toLeftOf="@+id/nf_missile_8"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/nf_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/nf_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/nf_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/nf_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/as_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/as_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_1"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/as_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_2"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/as_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_3"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/as_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_4"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="55dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/as_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_5"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/as_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_6"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="48dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/as_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_7"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/as_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/as_missile_8"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="53dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/as_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/as_missile_9"
+            android:layout_marginRight="1dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/as_explosion_layout"
+            android:layout_toLeftOf="@+id/as_missile_8"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/as_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/as_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/as_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/as_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        >
+
+
+        <ImageView
+            android:id="@+id/eu_missile_1"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="0dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/eu_missile_2"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_1"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="invisible"
+            />
+        <ImageView
+            android:id="@+id/eu_missile_3"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_2"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/eu_missile_4"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_3"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="1dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/eu_missile_5"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_4"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="36dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/eu_missile_6"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_5"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="35dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/eu_missile_7"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_6"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="36dp"
+            android:visibility="invisible"
+
+            />
+
+        <ImageView
+            android:id="@+id/eu_missile_8"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_7"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="42dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/eu_missile_9"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_toLeftOf="@+id/eu_missile_8"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="50dp"
+            android:visibility="invisible"
+
+            />
+        <ImageView
+            android:id="@+id/eu_missile_10"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/exp_dot_2"
+            android:layout_marginTop="60dp"
+            android:layout_toLeftOf="@+id/eu_missile_9"
+            android:layout_marginRight="5dp"
+            android:visibility="invisible"
+
+            />
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="43dp"
+            android:id="@+id/eu_explosion_layout"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/eu_explosion_4"
+                android:background="@drawable/exp_dot_4"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/eu_explosion_3"
+                android:background="@drawable/exp_dot_3"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/eu_explosion_2"
+                android:background="@drawable/exp_dot_2"
+                android:visibility="invisible"/>
+            <ImageView
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/eu_explosion_1"
+                android:background="@drawable/exp_dot_1"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+    </RelativeLayout>
     
     <TextView
         android:id="@+id/info_text"
@@ -27260,10 +28239,36 @@
             android:layout_height="wrap_content"
             android:textColor="@color/exp_1"
             android:background="@drawable/red_round_rect"
-            android:text="YOU WIN"
-            android:layout_centerInParent="true"
+            android:text=" YOU WIN "
+            android:id="@+id/endText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
             android:textSize="60sp"
             android:padding="5dp"/>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/endGrade"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/endText"
+            android:textColor="@color/exp_1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/red_round_rect"
+            android:visibility="gone"
+            android:text=" ☢☣☠✮✯✪ "
+            android:textSize="50sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="@color/exp_1"
+            android:background="@drawable/red_round_rect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:text=" YOU KILLED THE WORLD IN \n __ YEARS, ___ DAYS "
+            android:layout_below="@+id/endGrade"
+            android:id="@+id/endMessageText"/>
     </RelativeLayout>
 </RelativeLayout>

@@ -8,6 +8,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.RotateAnimation;
 import android.widget.FrameLayout;
@@ -4347,6 +4349,9 @@ public class MapScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map_screen);
 
+        /*requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        setContentView(R.layout.activity_map_screen);*/
 
 
         atDawn();
@@ -5226,7 +5231,7 @@ public class MapScreen extends AppCompatActivity {
     public void disable(){
         regionClick(10);
 
-        View[] disabledObjects= new View[28];
+        View[] disabledObjects= new View[29];
         disabledObjects[0] = findViewById(R.id.time_text_view);
         disabledObjects[1]=findViewById(R.id.pause_button);
         disabledObjects[2]=findViewById(R.id.speed_button);
@@ -5255,6 +5260,7 @@ public class MapScreen extends AppCompatActivity {
         disabledObjects[25]=findViewById(R.id.nf_upgrade);
         disabledObjects[26]=findViewById(R.id.sf_upgrade);
         disabledObjects[27]=findViewById(R.id.as_upgrade);
+        disabledObjects[28]=findViewById(R.id.info_text);
 
         for (int i =0;i<disabledObjects.length;i++){
             disabledObjects[i].setVisibility(View.GONE);
@@ -5318,40 +5324,16 @@ public class MapScreen extends AppCompatActivity {
     }
     public void loseScreen(){
 
-        Log.d("lose screen", "lost");
+        //Log.d("lose screen", "lost");
 
-        RelativeLayout na = (RelativeLayout) findViewById(R.id.northAmerica);
-        na.setVisibility(View.GONE);
+        RelativeLayout end = (RelativeLayout) findViewById(R.id.winLayout);
+        TextView endText = (TextView)findViewById(R.id.endText);
 
-        RelativeLayout ca = (RelativeLayout) findViewById(R.id.centralAmerica);
-        ca.setVisibility(View.GONE);
+        endText.setText(" YOU LOSE ");
+        endText.setBackgroundResource(R.drawable.blue_rect);
+        endText.setTextColor(getResources().getColor(R.color.mapBlue));
 
-        RelativeLayout sa = (RelativeLayout) findViewById(R.id.southAmerica);
-        sa.setVisibility(View.GONE);
-
-        RelativeLayout eu = (RelativeLayout) findViewById(R.id.europe);
-        eu.setVisibility(View.GONE);
-
-        RelativeLayout rs = (RelativeLayout) findViewById(R.id.russia);
-        rs.setVisibility(View.GONE);
-
-        RelativeLayout me = (RelativeLayout) findViewById(R.id.middleEast);
-        me.setVisibility(View.GONE);
-
-        RelativeLayout as = (RelativeLayout) findViewById(R.id.asia);
-        as.setVisibility(View.GONE);
-
-        RelativeLayout nf = (RelativeLayout) findViewById(R.id.northAfrica);
-        nf.setVisibility(View.GONE);
-
-        RelativeLayout sf = (RelativeLayout) findViewById(R.id.southAfrica);
-        sf.setVisibility(View.GONE);
-
-        RelativeLayout oc = (RelativeLayout) findViewById(R.id.oceania);
-        oc.setVisibility(View.GONE);
-
-        TextView info = (TextView) findViewById(R.id.info_text);
-        info.setText("YOU LOSE");
+        end.setVisibility(View.VISIBLE);
     }
 
     public void checkupgradePoints(){
@@ -5591,10 +5573,10 @@ public class MapScreen extends AppCompatActivity {
     int missileInterval;
 
     public void missileLaunch(View view){
-        if(upgrades==40) {
+        //if(upgrades==40) {
             upgrades=0;
             disable();
-            final ImageView[][] paths = new ImageView[2][13];
+            final ImageView[][] paths = new ImageView[8][14];
 
             paths[0][0] = (ImageView) findViewById(R.id.na_missile_1);
             paths[0][1] = (ImageView) findViewById(R.id.na_missile_2);
@@ -5624,7 +5606,91 @@ public class MapScreen extends AppCompatActivity {
             paths[1][11] = (ImageView) findViewById(R.id.ca_explosion_3);
             paths[1][12] = (ImageView) findViewById(R.id.ca_explosion_4);
 
-            missileInterval = 500;
+            paths[2][0] = (ImageView) findViewById(R.id.sa_missile_1);
+            paths[2][1] = (ImageView) findViewById(R.id.sa_missile_2);
+            paths[2][2] = (ImageView) findViewById(R.id.sa_missile_3);
+            paths[2][3] = (ImageView) findViewById(R.id.sa_missile_4);
+            paths[2][4] = (ImageView) findViewById(R.id.sa_missile_5);
+            paths[2][5] = (ImageView) findViewById(R.id.sa_missile_6);
+            paths[2][6] = (ImageView) findViewById(R.id.sa_missile_7);
+            paths[2][7] = (ImageView) findViewById(R.id.sa_missile_8);
+            paths[2][8] = (ImageView) findViewById(R.id.sa_missile_9);
+            paths[2][9] = (ImageView) findViewById(R.id.sa_explosion_1);
+            paths[2][10] = (ImageView) findViewById(R.id.sa_explosion_2);
+            paths[2][11] = (ImageView) findViewById(R.id.sa_explosion_3);
+            paths[2][12] = (ImageView) findViewById(R.id.sa_explosion_4);
+
+            paths[3][0] = (ImageView) findViewById(R.id.sf_missile_1);
+            paths[3][1] = (ImageView) findViewById(R.id.sf_missile_2);
+            paths[3][2] = (ImageView) findViewById(R.id.sf_missile_3);
+            paths[3][3] = (ImageView) findViewById(R.id.sf_missile_4);
+            paths[3][4] = (ImageView) findViewById(R.id.sf_missile_5);
+            paths[3][5] = (ImageView) findViewById(R.id.sf_missile_6);
+            paths[3][6] = (ImageView) findViewById(R.id.sf_missile_7);
+            paths[3][7] = (ImageView) findViewById(R.id.sf_missile_8);
+            paths[3][8] = (ImageView) findViewById(R.id.sf_missile_9);
+            paths[3][9] = (ImageView) findViewById(R.id.sf_explosion_1);
+            paths[3][10] = (ImageView) findViewById(R.id.sf_explosion_2);
+            paths[3][11] = (ImageView) findViewById(R.id.sf_explosion_3);
+            paths[3][12] = (ImageView) findViewById(R.id.sf_explosion_4);
+
+            paths[4][0] = (ImageView) findViewById(R.id.me_missile_1);
+            paths[4][1] = (ImageView) findViewById(R.id.me_missile_2);
+            paths[4][2] = (ImageView) findViewById(R.id.me_missile_3);
+            paths[4][3] = (ImageView) findViewById(R.id.me_missile_4);
+            paths[4][4] = (ImageView) findViewById(R.id.me_missile_5);
+            paths[4][5] = (ImageView) findViewById(R.id.me_missile_6);
+            paths[4][6] = (ImageView) findViewById(R.id.me_missile_7);
+            paths[4][7] = (ImageView) findViewById(R.id.me_missile_8);
+            paths[4][8] = (ImageView) findViewById(R.id.me_missile_9);
+            paths[4][9] = (ImageView) findViewById(R.id.me_explosion_1);
+            paths[4][10] = (ImageView) findViewById(R.id.me_explosion_2);
+            paths[4][11] = (ImageView) findViewById(R.id.me_explosion_3);
+            paths[4][12] = (ImageView) findViewById(R.id.me_explosion_4);
+
+        paths[5][0] = (ImageView) findViewById(R.id.nf_missile_1);
+        paths[5][1] = (ImageView) findViewById(R.id.nf_missile_2);
+        paths[5][2] = (ImageView) findViewById(R.id.nf_missile_3);
+        paths[5][3] = (ImageView) findViewById(R.id.nf_missile_4);
+        paths[5][4] = (ImageView) findViewById(R.id.nf_missile_5);
+        paths[5][5] = (ImageView) findViewById(R.id.nf_missile_6);
+        paths[5][6] = (ImageView) findViewById(R.id.nf_missile_7);
+        paths[5][7] = (ImageView) findViewById(R.id.nf_missile_8);
+        paths[5][8] = (ImageView) findViewById(R.id.nf_missile_9);
+        paths[5][9] = (ImageView) findViewById(R.id.nf_explosion_1);
+        paths[5][10] = (ImageView) findViewById(R.id.nf_explosion_2);
+        paths[5][11] = (ImageView) findViewById(R.id.nf_explosion_3);
+        paths[5][12] = (ImageView) findViewById(R.id.nf_explosion_4);
+
+        paths[6][0] = (ImageView) findViewById(R.id.as_missile_1);
+        paths[6][1] = (ImageView) findViewById(R.id.as_missile_2);
+        paths[6][2] = (ImageView) findViewById(R.id.as_missile_3);
+        paths[6][3] = (ImageView) findViewById(R.id.as_missile_4);
+        paths[6][4] = (ImageView) findViewById(R.id.as_missile_5);
+        paths[6][5] = (ImageView) findViewById(R.id.as_missile_6);
+        paths[6][6] = (ImageView) findViewById(R.id.as_missile_7);
+        paths[6][7] = (ImageView) findViewById(R.id.as_missile_8);
+        paths[6][8] = (ImageView) findViewById(R.id.as_missile_9);
+        paths[6][9] = (ImageView) findViewById(R.id.as_explosion_1);
+        paths[6][10] = (ImageView) findViewById(R.id.as_explosion_2);
+        paths[6][11] = (ImageView) findViewById(R.id.as_explosion_3);
+        paths[6][12] = (ImageView) findViewById(R.id.as_explosion_4);
+
+        paths[7][0] = (ImageView) findViewById(R.id.eu_missile_1);
+        paths[7][1] = (ImageView) findViewById(R.id.eu_missile_2);
+        paths[7][2] = (ImageView) findViewById(R.id.eu_missile_3);
+        paths[7][3] = (ImageView) findViewById(R.id.eu_missile_4);
+        paths[7][4] = (ImageView) findViewById(R.id.eu_missile_5);
+        paths[7][5] = (ImageView) findViewById(R.id.eu_missile_6);
+        paths[7][6] = (ImageView) findViewById(R.id.eu_missile_7);
+        paths[7][7] = (ImageView) findViewById(R.id.eu_missile_8);
+        paths[7][8] = (ImageView) findViewById(R.id.eu_missile_9);
+        paths[7][9] = (ImageView) findViewById(R.id.eu_explosion_1);
+        paths[7][10] = (ImageView) findViewById(R.id.eu_explosion_2);
+        paths[7][11] = (ImageView) findViewById(R.id.eu_explosion_3);
+        paths[7][12] = (ImageView) findViewById(R.id.eu_explosion_4);
+        
+        missileInterval = 500;
 
 
             final Counter missileCounter = new Counter();
@@ -5641,7 +5707,7 @@ public class MapScreen extends AppCompatActivity {
                                 runOnUiThread(new Runnable() {
                                     @Override
                                     public void run() {
-                                        Log.d("missiles", "   " + missileCounter.getRegCount());
+                                        //Log.d("missiles", "   " + missileCounter.getRegCount());
                                         if (missileCounter.getRegCount() < 12) {
 
                                             for (int i = 0; i < paths.length; i++)
@@ -5670,14 +5736,39 @@ public class MapScreen extends AppCompatActivity {
             };
 
             m.start();
-        }
+        //}
     }
     public void winScreen(){
         RelativeLayout win = (RelativeLayout)findViewById(R.id.winLayout);
         win.setVisibility(View.VISIBLE);
+        endMessage();
     }
     public void setInt(int num){
         missileInterval=num;
+    }
+
+    public void endMessage(){
+        int endTime=(int)time.getTime();
+        String grade;
+        int days=endTime % 365;
+        int years=endTime/365;
+        if(years<1)
+            grade = " ☢☢☢☢☢ ";
+        else if(years<2)
+            grade = " ☢☢☢☢ ";
+        else if(years<3)
+            grade = " ☢☢☢ ";
+        else if(years<4)
+            grade = " ☢☢ ";
+        else
+            grade = " ☢ ";
+        //SET CHECK MARKS
+        TextView gradeText = (TextView)findViewById(R.id.endGrade);
+        gradeText.setText(grade);
+        gradeText.setVisibility(View.VISIBLE);
+        TextView text = (TextView)findViewById(R.id.endMessageText);
+        text.setVisibility(View.VISIBLE);
+        text.setText(" YOU KILLED THE WORLD IN \n" + years + " YEARS AND " + days + " DAYS ");
     }
 }
 
